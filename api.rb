@@ -3,7 +3,7 @@ require 'open-uri'
 
 print "検索ワードを入力してください： "
 keyword = STDIN.gets
-print "\n[[[   検索中...   ]]]\n\n"
+print "\n[[[  検索中...  ]]]\n\n"
 
 url = "http://connpass.com/api/v1/event/?keyword=#{keyword}"
 html = open(url).read
